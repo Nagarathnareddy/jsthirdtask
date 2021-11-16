@@ -1,0 +1,268 @@
+#body
+{
+    background-image: url(../jsthirdtask/images.html/whitebg.jpeg);
+    width: 100vw;
+    height: 100vh;
+    border-color: gray;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    color: gray;
+    text-shadow: 3px 3px 3px;
+}
+#heading
+{
+    text-align: center;
+    font-size: 3em;
+    border-width: 5px;
+}
+
+#fset1
+{
+    display: inline-table;
+    width: 300px;
+    height: 750px;
+    margin-left: 100px;
+}
+
+#fset2
+{
+    display: inline-table;
+    width: 300px;
+    height: 750px;
+    margin-left: 200px;
+    margin-top: 30px;
+    
+}
+
+#fset3
+{
+    display: inline-table;
+    width: 300px;
+    height: 750px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+#rollno
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+
+#telMarks
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#engMarks
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#hinMarks
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#matMarks
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#sciMarks
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#socMarks
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#telMarks2
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#engMarks2
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#hinMarks2
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#matMarks2
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#sciMarks2
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#socMarks2
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#telMarks3
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#engMarks3
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#hinMarks3
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#matMarks3
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#sciMarks3
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+#socMarks3
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#button1
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 1em;
+    background-color:#2dc653 ;
+    
+}
+#button2
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 1em;
+    background-color:#2dc653 ;
+}
+#button3
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 1em;
+    background-color: #2dc653;
+}
+#clear1
+{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 1em;
+    background-color:gray ;
+    margin-left: 5px;
+}
+#clear2
+{
+    width: 100px;
+    height: 50px;
+    border-color: honeydew;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 1em;
+    background-color:gray ;
+    border-color: rgb(172, 185, 151);
+    margin-left: 5px;
+}
+#clear3
+{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 1em;
+    background-color: gray;
+    margin-left: 5px;
+}

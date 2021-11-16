@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <strong><h1 id="heading">SSC EXAMINATION RESULTS</h1></strong>  
+        <!--student1-->
+    <fieldset id="fset1">
+        
+        
+       
+        <br>p
+        <label>Telugu Marks</label>
+        <br>
+        <input id="telMarks" type="text">
+        <br>
+        <label>English Marks</label>
+        <br>
+        <input id="engMarks" type="text">
+        <br>
+        <label>Hindi Marks</label>
+        <br>
+        <input id="hinMarks" type="text">
+        <br>
+        <label>Maths Marks</label>
+        <br>
+        <input id="matMarks" type="text">
+        <br>
+        <label>Science Marks</label>
+        <br>
+        <input id="sciMarks" type="text">
+        <br>
+        <label>Social Marks</label>
+        <br>
+        <input id="socMarks"type="text">
+        <br>
+        <br>
+
+        <button id="button1" onclick="totalMarks(); averageMarks(); result(); grade();">Calculate</button>
+        
+
+        <button id="clear1">Clear</button>
+        <br>
+        <br>
+      
+        <label>TotalMarks</label><br><input type="text" id="totalMarks1">
+        <br>
+        <label>Average</label><br><input type="text" id="averageMarks1">
+        <br>
+      
+        <label>Grade</label><br><input type="text" id="grade1">
+        <h1 id="result1">Result</h1>
+
+       
+
+        
+
+    </div>
+        
+    
+ </fieldset>
+
+            <!--student2-->
+ <fieldset id="fset2">
+        
+       
+
+        <label>Telugu Marks</label>
+        <br>
+        <input id="telMarks2" type="text">
+        <br>
+        <label>English Marks</label>
+        <br>
+        <input id="engMarks2" type="text">
+        <br>
+        <label>Hindi Marks</label>
+        <br>
+        <input id="hinMarks2" type="text">
+        <br>
+        <label>Maths Marks</label>
+        <br>
+        <input id="matMarks2" type="text">
+        <br>
+        <label>Science Marks</label>
+        <br>
+        <input id="sciMarks2" type="text">
+        <br>
+        <label>Social Marks</label>
+        <br>
+        <input  id="socMarks2"type="text">
+        <br>
+        <br>
+
+        <button id="button2" onclick="totalMarks2(); averageMarks2();grade2(); ">Calculate</button>
+
+        <button id="clear2">Clear</button>
+        <br>
+        <br>
+      
+        <label>TotalMarks</label><br><input type="text" id="totalMarks2">
+        <br>
+        <label>Average</label><br><input type="text" id="averageMarks2">
+        <br>
+        <label>Grade</label><br><input type="text" id="grade2">
+        <h1 id="result2">Result</h1>
+       
+    </fieldset>
+                 student3
+
+     <fieldset id="fset3">
+        
+       
+
+        <label>Telugu Marks</label>
+        <br>
+        <input id="telMarks3" type="text">
+        <br>
+        <label>English Marks</label>
+        <br>
+        <input id="engMarks3" type="text">
+        <br>
+        <label>Hindi Marks</label>
+        <br>
+        <input id="hinMarks3" type="text">
+        <br>
+        <label>Maths Marks</label>
+        <br>
+        <input id="matMarks3" type="text">
+        <br>
+        <label>Science Marks</label>
+        <br>
+        <input id="sciMarks3" type="text">
+        <br>
+        <label>Social Marks</label>
+        <br>
+        <input  id="socMarks3"type="text">
+        <br>
+        <br>
+        <button id="button3" onclick="totalMarks3(); averageMarks3();grade3(); rollNoValidation">Calculate</button>
+
+        <button id="clear3">Clear</button>
+        <br>
+        <br>
+      
+        <label>TotalMarks</label><br><input type="text" id="totalMarks3">
+        <br>
+        <label>Average</label><br><input type="text" id="averageMarks3">
+        <br>
+        <label>Grade</label><br><input type="text" id="grade3">
+        <h1 id="result3">Result</h1>
+       
+
+     </fieldset>
+
+
+<script>
+
+    var avgMarks;
+    var telMarks;
+    var engMarks;
+    var hinMarks;
+    var matMarks;
+    var sciMarks;
+    var socMarks;
+    function result()
+          {
+            let totalMarks=document.getElementById("totalMarks1").value;
+            if (
+              telMarks >= 35 && engMarks >= 35 &&
+              hinMarks >= 35 && 
+              matMarks >= 35 && 
+              sciMarks >= 35 && 
+              socMarks >= 35 )
+             
+            {
+                document.getElementById("result1").innerHTML="Passed";
+                document.getElementById("result1").style.color="green";
+            }
+            else 
+            {
+                document.getElementById("result1").innerHTML="Failed";
+                document.getElementById("result1").style.color="Red";
+            }
+               
+          }
+         
+
+          function totalMarks()
+        {
+
+    
+    var telMarks = parseInt(document.getElementById("telMarks").value);
+    var engMarks = parseInt(document.getElementById("engMarks").value);
+    var hinMarks = parseInt(document.getElementById("hinMarks").value);
+    var matMarks = parseInt(document.getElementById("matMarks").value);
+    var sciMarks = parseInt(document.getElementById("sciMarks").value);
+    var socMarks= parseInt(document.getElementById("socMarks").value);
+
+     if(telMarks>100||engMarks>100||hinMarks>100||matMarks>100||sciMarks>100||socMarks>100)
+     {
+         alert("please enter values below or equal to 100")
+     }
+     else
+     {
+      document.getElementById("totalMarks1").value = engMarks + telMarks + hinMarks + matMarks + sciMarks + socMarks;
+     }
+
+
+
+
+
+        // Calculating Total
+    var totalMarks = engMarks + telMarks + hinMarks + matMarks + sciMarks + socMarks;
+         document.getElementById("totalMarks1").value = totalMarks;
+        }
+
+        function averageMarks() {
+        // Calculating Average 
+        var totalMarks = document.getElementById("totalMarks1").value;
+        
+         avgMarks = totalMarks*100/600;
+        document.getElementById("averageMarks1").value = avgMarks;
+        }
+grade(avgMarks)
+         // Calculating Grade
+
+
+
+       function grade()
+       {
+
+       
+       if(avgMarks>=80)
+       {
+                document.getElementById("grade1").value="A";
+               result();
+       }
+        else if(avgMarks>=60) 
+       {
+        document.getElementById("grade1").value="B";
+               result1();
+       }  
+        else if (avgMarks>=40) 
+       {
+        document.getElementById("grade1").value="C";
+               result1();
+       }   
+
+       }
+
+
+ 
+
+        
+
+
+/*student2*/
+
+
+
+function result2()
+          {
+            let totalMarks=document.getElementById("totalMarks2").value;
+            if (
+              telMarks >= 35 && engMarks >= 35 &&
+              hinMarks >= 35 && 
+              matMarks >= 35 && 
+              sciMarks >= 35 && 
+              socMarks >= 35 )
+             
+            {
+                document.getElementById("result2").innerHTML="Passed";
+                document.getElementById("result2").style.color="green";
+            }
+            else 
+            {
+                document.getElementById("result2").innerHTML="Failed";
+                document.getElementById("result2").style.color="Red";
+            }
+               
+          }
+
+        function totalMarks2()
+        {
+
+    
+    var telMarks = parseInt(document.getElementById("telMarks2").value);
+    var engMarks = parseInt(document.getElementById("engMarks2").value);
+    var hinMarks = parseInt(document.getElementById("hinMarks2").value);
+    var matMarks = parseInt(document.getElementById("matMarks2").value);
+    var sciMarks = parseInt(document.getElementById("sciMarks2").value);
+    var socMarks= parseInt(document.getElementById("socMarks2").value);
+
+    if(telMarks>100||engMarks>100||hinMarks>100||matMarks>100||sciMarks>100||socMarks>100)
+     {
+         alert("please enter values below or equal to 100")
+     }
+     else
+     {
+      document.getElementById("totalMarks2").value = engMarks + telMarks + hinMarks + matMarks + sciMarks + socMarks;
+     }
+
+
+
+
+        // Calculating Total
+    var totalMarks2 = engMarks + telMarks + hinMarks + matMarks + sciMarks + socMarks;
+         document.getElementById("totalMarks2").value = totalMarks2;
+        }
+
+
+
+
+        function averageMarks2() {
+        // Calculating Average 
+        var totalMarks = document.getElementById("totalMarks2").value;
+        
+         avgMarks = totalMarks*100/600;
+        document.getElementById("averageMarks2").value = avgMarks;
+        }
+
+         // Calculating Grade
+
+
+
+       function grade2()
+       {
+
+       
+       if(avgMarks>=80)
+       {
+                document.getElementById("grade2").value="A";
+               result2();
+       }
+        else if(avgMarks>=60) 
+       {
+        document.getElementById("grade2").value="B";
+               result2();
+       }  
+        else if (avgMarks>=40) 
+       {
+        document.getElementById("grade2").value="C";
+               result2();
+       }   
+
+       }
+
+       
+
+             /*student3*/
+
+             function result3()
+          {
+            let totalMarks=document.getElementById("totalMarks3").value;
+            if (
+              telMarks >= 35 && engMarks >= 35 &&
+              hinMarks >= 35 && 
+              matMarks >= 35 && 
+              sciMarks >= 35 && 
+              socMarks >= 35 )
+             
+            {
+                document.getElementById("result3").innerHTML="Passed";
+                document.getElementById("result3").style.color="green";
+            }
+            else 
+            {
+                document.getElementById("result3").innerHTML="Failed";
+                document.getElementById("result3").style.color="Red";
+            }
+               
+          }
+        function totalMarks3()
+        {
+
+    
+    var telMarks = parseInt(document.getElementById("telMarks3").value);
+    var engMarks = parseInt(document.getElementById("engMarks3").value);
+    var hinMarks = parseInt(document.getElementById("hinMarks3").value);
+    var matMarks = parseInt(document.getElementById("matMarks3").value);
+    var sciMarks = parseInt(document.getElementById("sciMarks3").value);
+    var socMarks= parseInt(document.getElementById("socMarks3").value);
+
+    if(telMarks>100||engMarks>100||hinMarks>100||matMarks>100||sciMarks>100||socMarks>100)
+     {
+         alert("please enter values below or equal to 100")
+     }
+     else
+     {
+      document.getElementById("totalMarks3").value = engMarks + telMarks + hinMarks + matMarks + sciMarks + socMarks;
+     }
+
+
+        // Calculating Total
+    var totalMarks3 = engMarks + telMarks + hinMarks + matMarks + sciMarks + socMarks;
+         document.getElementById("totalMarks3").value = totalMarks3;
+        }
+
+        function averageMarks3() {
+        // Calculating Average 
+        var totalMarks = document.getElementById("totalMarks3").value;
+        
+         avgMarks = totalMarks*100/600;
+        document.getElementById("averageMarks3").value = avgMarks;
+        }
+
+         // Calculating Grade
+
+
+
+       function grade3()
+       {
+
+       
+       if(avgMarks>=80)
+       {
+                document.getElementById("grade3").value="A";
+               result3();
+       }
+        else if(avgMarks>=60) 
+       {
+        document.getElementById("grade3").value="B";
+               result3();
+       }  
+        else if (avgMarks>=40) 
+       {
+        document.getElementById("grade3").value="C";
+               result3();
+       }   
+
+       }
+
+       
+
+</script>
+
+    
+</body>
+</html>
